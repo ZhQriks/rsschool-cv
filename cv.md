@@ -19,7 +19,7 @@ for (int i = 0; i < n-1; i++)
         for (int j = 0; j < n-1; j++)
             if (a[j].diagonal > a[j+1].diagonal)
             {
-                Point bu = a[j];
+                Point buf = a[j];
                 a[j] = a[j+1];
                 a[j+1] = buf;
             }
