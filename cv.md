@@ -2,7 +2,7 @@
 ## Contacts
   * Mail: zhorikmartanov228@gmail.com
   * Telegram: etajaraubivaetmenya
-  * Disord: worksmarternotharder#7633
+  * Discord: worksmarternotharder#7633
   * Github: [Zhqriks](https://github.com/ZhQriks)
 ## About me
   I study at NIS, currently I am studying front-end and Olympiad programming,
