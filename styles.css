@@ -1,55 +1,170 @@
-.grid_containers {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
-    grid-template-areas:
-        "nav nav nav nav"
-        "sidebar main main main"
-        "sidebar content1 content2 content3"
-        "sidebar footer footer footer";
-    grid-gap: 0.2rem;
-    border-radius: 5px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 }
-nav {
-    background:#9db802 ;
-    grid-area: nav;
+
+h2 {
+    font-size: 3rem;
 }
-main {
-    background:#fd7c84 ;
-    grid-area: main;
+a {
+    color: white;
+    text-decoration: none;
 }
-#sidebar {
-    background:#025b0e ;
-    grid-area: sidebar;
+body {
+    background-color: #161616;
 }
-#content1 {
-    background:#9db802 ;
-    grid-area: content1;
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C7493A;
+    height: 90px;
 }
-#content2 {
-    background:#cfcdcb ;
-    grid-area: content2;
+.info {
+    display: flex;
+    margin-top:300px;
+    margin-left: 128px;
 }
-#content3 {
-    background:#025b0e ;
-    grid-area: content3;
+.nav {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-left: 30px;
+}
+.about_me{
+    display: flex;
+}
+.logos_row {
+    margin-top: 15px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.logos_row img {
+    margin-bottom: 15px;
+}
+#gmail {
+    width: 27px;
+    height: 22px;
+}
+#telegram {
+    width: 27px;
+    height: 27px;
+}
+#discord {
+    width: 27px;
+    height: 20px;
+}
+.text_info h1 {
+    font-size: 3rem;
+}
+#frontend {
+    color: #C7493A;
+    margin-top: -4px;
+    margin-bottom: 20px;
+}
+.photo {
+    margin-top: 220px;
+    margin-left: 390px;
+    border-radius: 50%;
+}
+.contacts {
+    margin-left: 185px;
+}
+li {
+    list-style: none;
+}
+.dotted li::before {
+    content: "• ";
+    color: #C7493A;
+}
+.everything {
+    height: 1920px;
+    width: 1600px;
+    margin: auto;
+    background-color: #161616;
+}
+.skills {
+    margin-top: 27px;
+}
+.centered {
+    text-align: center;
+}
+.progress_bars {
+    margin-left: 180px;
+    display: flex;
+}
+.progress_bars1 {
+    margin-right: 240px;
+}
+.bar {
+    background: #689775;
+    display: block;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 500px;
+    margin-bottom: 40px;
+}
+.bar span {
+    height: 10px;
+    float: left;
+    background: #64EE8A;
+}
+#bar_in1 {
+    width: 80%;
+}
+#bar_in2 {
+    width: 10%;
+}
+#bar_in3 {
+    width: 90%;
+}
+#bar_in4 {
+    width: 50%;
+}
+.code_work {
+    margin-top: 100px;
+    margin-left: 185px;
+    display: flex;
+}
+.code {
+    margin-right: 363px;
+}
+.Education {
+    margin-left: 185px;
+    margin-top: 88px;
+}
+.Languages {
+    margin-left: 185px;
+    margin-top: 71px;
+}
+ol { counter-reset: item; }
+ol li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    color: #C7493A;
 }
 footer {
-    background: #f5b2b3;
-    grid-area: footer;
+    width:100%;
+    height:150px;
+    background-color: #C7493A;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
 }
-@media only screen and (max-width: 550px) {
-    .grid_containers {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
-        grid-template-areas:
-            "nav"
-            "sidebar "
-            "main"
-            "content1"
-            "content2"
-            "content3"
-            "footer";
-    }
+#github_logo {
+    width: 50px;
+    height: 50px;
+}
+#rs_logo {
+    width: 131px;
+    height: 49px;
 }
